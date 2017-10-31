@@ -1,0 +1,11 @@
+{
+  "name": "quotationTool",
+  "main": "app.js",
+  "description": "",
+  "authors": [
+    "karan singh"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true
+}

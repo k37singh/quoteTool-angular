@@ -1,0 +1,65 @@
+<script>
+  $( function() {
+    var availableTags = [
+      "Alex Smith",
+      "Andrea Johnson"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+    $( "#numbers" ).autocomplete({
+      source: ["1234567890", "2265050239"]
+    });
+    $( "#company" ).autocomplete({
+      source: availableTags
+    });
+
+    $( "#emails" ).autocomplete({
+      source: ["abc@gmail.com", "xyz@hotmail.com"]
+    });
+
+
+  } );
+</script>
+
+<md-content layout-padding>
+    <div>
+      <form name="userForm">
+
+        <div layout-gt-sm="row">
+          <md-input-container class="ui-widget" class="md-block" flex-gt-sm>
+			    <label for="tags">Name</label>
+			    <input id="tags" >
+			</md-input-container>
+        </div>
+
+        <div layout-gt-sm="row">
+          <md-input-container class="ui-widget" class="md-block" flex-gt-sm>
+			    <label for="numbers">Number</label>
+			    <input id="numbers">
+			</md-input-container>
+        </div>
+
+        <div layout-gt-sm="row">
+          <md-input-container class="ui-widget" class="md-block" flex-gt-sm>
+			    <label for="emails">Email</label>
+			    <input id="emails" >
+			</md-input-container>
+        </div>
+
+        <div layout-gt-sm="row">
+          <md-input-container class="ui-widget" class="md-block" flex-gt-sm>
+			    <label for="company">Company</label>
+			    <input id="company" >
+			</md-input-container>
+        </div>
+        <div layout-gt-sm="row" class="centerThis">
+            <md-input-container class="ui-widget " class="md-block" flex-gt-sm>
+         	   <md-button class="md-primary" ng-href="#home">Cancel</md-button>
+            	<md-button class="md-primary" ng-href="#quotesheet">Add Customer</md-button>
+            </md-input-container>
+        </div>
+        </form>
+    </div>
+</md-content>
+
